@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav * {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+nav *:hover{
+    color: #635994;
+}
+.contentDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    box-shadow: rgba(184, 183, 183, 0.573) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 1%;
+}
+.spining {
+    /* Set a duration for the animation */
+    animation: spin 1s linear infinite; /* Adjust the duration as needed */
+    
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
